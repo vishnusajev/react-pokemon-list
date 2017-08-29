@@ -1,5 +1,5 @@
 /*
- * Home Reducer
+ * AppReducer
  *
  * The reducer takes care of our data. Using actions, we can change our
  * application state.
@@ -13,22 +13,25 @@
 import { fromJS } from 'immutable';
 
 import {
-  POKEMON_LIST,
+  OPEN_GLOBAL_LOADER,
+  CLOSE_GLOBAL_LOADER,
 } from './constants';
 
 const initialState = fromJS({
-  pokemonList: null,
+  showLoader: false,
 });
 
 
-function homeReducer(state = initialState, action) {
+function appReducer(state = initialState, action) {
   switch (action.type) {
-    case POKEMON_LIST:
-      return state.set('pokemonList', action.data);
+    case OPEN_GLOBAL_LOADER:
+      return state.set('showLoader', true);
+    case CLOSE_GLOBAL_LOADER:
+      return state.set('showLoader', false);
     default:
       return state;
   }
 }
 
 
-export default homeReducer;
+export default appReducer;

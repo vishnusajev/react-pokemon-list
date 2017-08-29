@@ -16,7 +16,6 @@ import { applyRouterMiddleware, Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { useScroll } from 'react-router-scroll';
 import FontFaceObserver from 'fontfaceobserver';
-import 'react-bootstrap-table/dist/react-bootstrap-table.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'styles/app.min.css';
 

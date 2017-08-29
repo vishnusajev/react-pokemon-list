@@ -16,6 +16,7 @@ import Helmet from 'react-helmet';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Sidebars from 'components/SideBar';
+import LoaderSpinner from 'containers/App/GlobalLoader';
 
 
 injectTapEventPlugin();
@@ -41,6 +42,7 @@ export default class App extends React.PureComponent { // eslint-disable-line re
           />
           <div className="main-wrap">
             <Sidebars />
+            <LoaderSpinner />
             <div className="content">
               <div className="container-fluid">
                 {React.Children.toArray(children)}
