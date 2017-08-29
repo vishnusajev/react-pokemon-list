@@ -1,14 +1,6 @@
-
 1. Clone this repo.
-2. Move to the appropriate directory: `cd react-boilerplate-complete-base`.<br />
-3. Do `yarn`
-4. Run `npm run start`
-
-## Additional packages installed are
-
-1. extract-text-webpack-plugin@2.1.2
-2. foundation-sites
-3. material-ui
-4. redux-form
-5. redux-form-material-ui
-
+2. Move to the appropriate directory: `cd react-pokemon-list`.<br />
+3. Do `yarn`. if `yarn` is not installed, install it from <a href="https://yarnpkg.com/lang/en/docs/install/">here</a>
+4. Install the api server from <a href="https://github.com/vishnusajev/python-test-apis">here</a>
+5. Install `Allow-Control-Allow-Origin` browser plugin from <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en">here</a>
+6. Run `npm run start`
